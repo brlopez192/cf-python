@@ -42,6 +42,7 @@ for recipe in recipes_list:
     recipe['difficulty'] = difficulty
 
     #instead of concatinating strings I used and f-string for simplicity
+    # \n means new line
     print(f"\nRecipe: {recipe['name']}")
     print(f"Cooking Time: {recipe['cooking_time']} minutes")
     print(f"Ingredients: {', '.join(recipe['ingredients'])}")
