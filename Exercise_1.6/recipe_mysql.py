@@ -32,11 +32,12 @@ def create_recipe(conn, cursor):
     conn.commit()
     print("Recipe added successfully.\n")
 
-
     conn.commit()
     print("Recipe added successfully.\n")
 
 # Search for a recipe
+
+
 def search_recipe(conn, cursor):
     search_term = input("Enter an ingredient to search for: ").strip().lower()
 
@@ -54,6 +55,8 @@ def search_recipe(conn, cursor):
         print("No recipes found with that ingredient.\n")
 
 # Update a recipe
+
+
 def update_recipe(conn, cursor):
     recipe_id = input("Enter the ID of the recipe to update: ")
     print("What would you like to update?")
@@ -77,6 +80,8 @@ def update_recipe(conn, cursor):
     print("Recipe updated successfully.\n")
 
 # Delete a recipe
+
+
 def delete_recipe(conn, cursor):
     recipe_id = input("Enter the ID of the recipe to delete: ")
     cursor.execute("DELETE FROM Recipes WHERE id = %s", (recipe_id,))
@@ -110,7 +115,6 @@ def main_menu(conn, cursor):
                 break
             else:
                 print("Invalid input, please try again.")
-
 
 
 if __name__ == "__main__":
