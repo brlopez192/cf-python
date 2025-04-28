@@ -37,6 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #bookstore-related apps
+    'books',  # This is the app for managing books
+    'sales',  # This is the app for managing sales
+    'salespersons',  # This is the app for managing salespersons
+    'customers',  # This is the app for managing customers
 ]
 
 MIDDLEWARE = [
